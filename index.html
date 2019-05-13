@@ -1,0 +1,83 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>date01_js</title>
+    <meta charset="UTF-8">
+    <script src="./date_01.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div style="padding: 0 10px;">
+    <h2>Javascript**</h2>
+
+    <h3>- What are the differences between a variable that is: `null`, `undefined`?</h3>
+    <p> null là một giá trị được gán. Nó nghĩa là không có gì.</p>
+    <p> undefined thường có nghĩa là một biến được khai báo nhưng chưa được định nghĩa.</p>
+    <p> null và undefined là các giá trị falysy.</p>
+    <p> null và undefined là các giá trị nguyên thủy. Tuy nhiên có một lỗi đó là typeof null = object</p>
+    <p> null !==undefined nhưng null == undefined</p>
+
+    <h3>- What is `use strict`? what are the advantages and disadvantages to using it?</h3>
+    <p>Khi bạn làm việc với Javascript thì bạn có thể sử dụng biến mà chưa cần định nghĩa (hoisting),<br> bạn có thể quên đặt dấu chấm phẩy ở cuối mỗi đoạn code và bạn có thể sử dụng tên những từ khóa để tạo tên biến.<br> Điều này làm cho các lập trình viên có thói quen làm việc quá dễ dãi và dẫn đến chương trình thiếu tính an toàn. <br>Chính vì vậy Javascript kể từ phiên bản 1.8.5 trở đi đã bổ sung một khái niệm gọi Strict Mode nhằm giải quyết tính thiếu an toàn này.<br>Use strict là từ khóa khai báo sử dụng chế độ Strict Mode, nghĩa là nếu bạn muốn sử dụng chế độ Strict Mode ở đâu thì chỉ việc đặt từ khóa "use strict" ở đó.</p>
+
+
+    <h3>- What are the differences between `==` and `===`? Write an example for each case (if any)?</h3>
+    <p>Toán tử === chỉ trả về true nếu như cả hai toán hạng đều cùng một loại và có cùng giá trị. Nếu so sánh khác loại, kết quả sẽ trả về false</p>
+    <p>Toán tử == trả về true nếu như cả hai toán hạng có cùng giá trị</p>
+    <h4>Example</h4>
+    <p>var a = 12; // number</p>
+    <p>var b = '12'; // string</p>
+    <p>// TRUE vì cả hai đều có giá trị là 12</p>
+    <p>document.write(a == b); </p>
+    <p>// FALSE vì mặc dù giá trị bằng nhau nhưng</p>
+    <p>// kiểu dữ liệu của a là number, của b là string</p>
+    <p>document.write(a === b);</p>
+
+    <h3>- What is different between declaration: `var`, `const` and `let`?</h3>
+    <p><b>var</b> tạo ra một biến có phạm vi truy cập xuyên suốt function chứa nó.</p>
+    <p><b>let</b> tạo ra một biến chỉ có thể truy cập được trong block bao quanh nó</p>
+    <p><b>const</b> dùng để khai báo một hằng số</p>
+    </div>
+    <div style="padding: 0 10px;">
+      <p>1. Write a JavaScript program to compute the sum of the two given integers.<br> If the two values are same, then returns triple their sum.</p>
+      <p>Input</p>
+        <input type="text" id="x" placeholder="x =" /> 
+        <input type="text" id="y" name="" placeholder="y =" /> 
+      <p>Output</p>
+      
+      <button type="button" onclick="myFunction01()">Ex_01</button>
+      <p id="ex01">result:</p>
+    </div>
+
+    <div style="padding: 0 10px;">
+      <p>2. Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.</p>
+      <p>Input</p>
+        <input type="text" id="a" placeholder="x =" /> 
+      <p>Output</p>
+      
+      <button type="button" onclick="myFunction02()">Ex_02</button>
+      <p id="ex02">result:</p>
+    </div>
+
+    <div style="padding: 0 10px;">
+      <p>3. A masked number is a string that consists of digits and one asterisk (*) that should be replaced by exactly one digit. Given a masked number find all the possible options to replace the asterisk with a digit to produce an integer divisible by 3.</p>
+      <p>Input</p>
+        <input type="text" id="s" placeholder="s= 1*9" /> 
+      <p>Output</p>
+      
+      <button type="button" onclick="myFunction03()">Ex_03</button>
+      <p id="ex03">result:</p>
+    </div>
+
+    <div style="padding: 0 10px;">
+    <p>4. A masked number is a string that consists of digits and one asterisk (*) that should be replaced by exactly one digit. Given a masked number find all the possible options to replace the asterisk with a digit to produce an integer divisible by 6</p>
+    <p>Input</p>
+      <input type="text" id="ch" placeholder="s= 1*9" /> 
+    <p>Output</p>
+    
+    <button type="button" onclick="myFunction04()">Ex_04</button>
+    <p id="ex04">result:</p>
+    </div>
+  </body>
+  </html>
+
+
